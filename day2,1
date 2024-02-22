@@ -1,0 +1,19 @@
+# Create a matrix with the provided data
+data <- matrix(c(18, 2, 20,
+                 22, 28, 10,
+                 20, 40, 40), nrow = 3, byrow = TRUE)
+
+# Convert the matrix to a data frame and label rows and columns
+rownames(data) <- c("5-6 years", "7-8 years", "9-10 years")
+colnames(data) <- c("Photograph A", "Photograph B", "Photograph C")
+
+# Print the data frame
+print(data)
+
+# Calculate the covariance matrix
+cov_matrix <- cov(data)
+print(cov_matrix)
+
+# Calculate the correlation matrix
+cor_matrix <- cor(data)
+print(cor_matrix)
